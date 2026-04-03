@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle 1, tacos locos</title>
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main>
+      <section class="container pink">
+        <h1 class="animate__animated animate__fadeInDown">Nuestros tacos locos</h1>
+        <article class="detail">
+          <img class="detail_img" src="../assets/img/tacos.png" title="Tacos locos" alt="Imagen tacos" />
+
+          <p class="reveal_left">
+            Uno de nuestros platos más destacados son los tacos locos. Los hacemos con tortilla de maíz, cebolla,
+            cilantro, tomate, aguacate y nuestra salsa secreta.
+          </p>
+
+          <p class="reveal_right">
+            Las carnes que usamos para darle un sabor excepcional son de cerdo adobada para nuestros tacos pastor y
+            cochinita pibil, carne de cerdo frita para nuestras carnitas y carne molida de cerdo para los tacos de
+            chorizo.
+          </p>
+
+          <p class="reveal_left">
+            Llevamos años aprendiendo a perfeccionar nuestra técnica de cocina de la mano de los mejores Chef mexicanos.
+            A continuación puedes ver nuestra variedad de tacos y como los hacemos en nuestra galería.
+          </p>
+          <h2>Explora nuestra galería:</h2>
+          <div class="carousel">
+            <button class="button_carrousel prev" onclick="moveSlide(-1)">‹</button>
+
+            <div class="carousel_container">
+              <div class="carousel_content" id="carouselTrack">
+                <img src="../assets/img/taco_carrousel_1.png" alt="Taco loco 1" class="carousel_img active" />
+                <img src="../assets/img/taco_carrousel_2.png" alt="Taco loco 2" class="carousel_img" />
+                <img src="../assets/img/taco_carrousel_3.png" alt="Taco loco 3" class="carousel_img" />
+                <img src="../assets/img/taco_carrousel_4.png" alt="Taco loco 4" class="carousel_img" />
+              </div>
+            </div>
+
+            <button class="button_carrousel next" onclick="moveSlide(1)">›</button>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VPvBJloi5FU?si=VJCWHf6qTaoytWFE"
+              title="YouTube video player"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <include src="partials/footer.html"></include>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

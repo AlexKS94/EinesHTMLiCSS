@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEC 1 Eines HTML i CSS index.html</title>
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main>
+      <section>
+        <div class="hero_intro">
+          <h1 class="animate__animated animate__fadeInDown">Descubre el sabor Méxicano</h1>
+          <p>
+            Bienvenido al rinconcito de los secretos gastronómicos del país del Tequila. Descubrirás los aromas y la
+            frescura con sabores tropicales.
+          </p>
+          <a class="button" href="./categoria">Explora nuestra categoría</a>
+        </div>
+      </section>
+      <section>
+        <div class="roller_intro pink">
+          <h1 class="reveal_left">Nuestros mejores platos</h1>
+          <div class="roller_slides">
+            <div class="roller_card active">
+              <img class="roller_card_img" src="./assets/img/plato_tacos.png" alt="Plato de tacos" />
+              <div class="roller_card_content">
+                <h2>Tacos locos</h2>
+                <p>Explora nuestra selección de tacos y deja que tu paladar disfrute la experiencia.</p>
+                <a class="button" href="./det1">Explorar nuestras fajitas</a>
+              </div>
+            </div>
+
+            <div class="roller_card">
+              <img class="roller_card_img" src="./assets/img/plato_fajita.png" alt="Plato de fajitas" />
+              <div class="roller_card_content">
+                <h2>Fajitas picantes</h2>
+                <p>Para los amantes del riesgo, tenemos una selección de las mejores fajitas ardientes y sabrosonas</p>
+                <a class="button" href="./det2">Explorar nuestros tacos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="enlaces_intro blue">
+          <h1 class="reveal_right">Descubre más sobre la web</h1>
+          <p>
+            Dirigete a la página de enlaces y descubre como se ha creado la web y todos los pasos seguidos, para que
+            puedas disfrutar de la gastronomía de méxico mediante una experiencia visual única.
+          </p>
+          <a class="button" href="./links">Ir a los enlaces</a>
+        </div>
+      </section>
+    </main>
+
+    <include src="partials/footer.html"></include>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
