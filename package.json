@@ -8,7 +8,8 @@
     "parcel:build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean parcel:build",
+    "optimize-images-sharp": "node sharp_img_optimization.js"
   },
   "keywords": [],
   "author": "alexander_kohl <alexander.kohl@uoc.edu>",
@@ -20,7 +21,8 @@
     "parcel": "^2.16.4",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.3",
-    "sass": "^1.98.0"
+    "sass": "^1.98.0",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
     "animate.css": "^4.1.1"

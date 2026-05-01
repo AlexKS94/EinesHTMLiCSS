@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalle 1, tacos locos</title>
+    <link rel="icon" href="../assets/img/chili.svg" type="image/svg+xml" />
   </head>
   <body>
     <include src="partials/header.html"></include>
@@ -11,7 +12,16 @@
       <section class="container pink">
         <h1 class="animate__animated animate__fadeInDown">Nuestros tacos locos</h1>
         <article class="detail">
-          <img class="detail_img" src="../assets/img/tacos.png" title="Tacos locos" alt="Imagen tacos" />
+          <picture class="detail_picture">
+            <source media="(max-width:767px)" srcset="../assets/img/det1_header_mobile.webp" />
+            <source media="(min-width:768px)" srcset="../assets/img/det1_header_desktop.webp" />
+            <img
+              class="detail_img"
+              src="../assets/img/det1_header_desktop.webp"
+              title="Tacos locos"
+              alt="Imagen tacos"
+            />
+          </picture>
 
           <p class="reveal_left">
             Uno de nuestros platos más destacados son los tacos locos. Los hacemos con tortilla de maíz, cebolla,
@@ -34,10 +44,34 @@
 
             <div class="carousel_container">
               <div class="carousel_content" id="carouselTrack">
-                <img src="../assets/img/taco_carrousel_1.png" alt="Taco loco 1" class="carousel_img active" />
-                <img src="../assets/img/taco_carrousel_2.png" alt="Taco loco 2" class="carousel_img" />
-                <img src="../assets/img/taco_carrousel_3.png" alt="Taco loco 3" class="carousel_img" />
-                <img src="../assets/img/taco_carrousel_4.png" alt="Taco loco 4" class="carousel_img" />
+                <img
+                  srcset="../assets/img/taco_carrousel_1_1x.webp 1x, ../assets/img/taco_carrousel_1_2x.webp 2x"
+                  src="../assets/img/taco_carrousel_1_1x.webp"
+                  alt="Taco loco 1"
+                  class="carousel_img active"
+                  loading="lazy"
+                />
+                <img
+                  srcset="../assets/img/taco_carrousel_2_1x.webp 1x, ../assets/img/taco_carrousel_2_2x.webp 2x"
+                  src="../assets/img/taco_carrousel_2_1x.webp"
+                  alt="Taco loco 2"
+                  class="carousel_img"
+                  loading="lazy"
+                />
+                <img
+                  srcset="../assets/img/taco_carrousel_3_1x.webp 1x, ../assets/img/taco_carrousel_3_2x.webp 2x"
+                  src="../assets/img/taco_carrousel_3_1x.webp"
+                  alt="Taco loco 3"
+                  class="carousel_img"
+                  loading="lazy"
+                />
+                <img
+                  srcset="../assets/img/taco_carrousel_4_1x.webp 1x, ../assets/img/taco_carrousel_4_2x.webp 2x"
+                  src="../assets/img/taco_carrousel_4_1x.webp"
+                  alt="Taco loco 4"
+                  class="carousel_img"
+                  loading="lazy"
+                />
               </div>
             </div>
 

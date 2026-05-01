@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PEC 1 Eines HTML i CSS index.html</title>
+    <link rel="icon" href="./assets/img/chili.svg" type="image/svg+xml" />
   </head>
   <body>
     <include src="partials/header.html"></include>
@@ -11,6 +12,9 @@
       <section>
         <div class="hero_intro">
           <h1 class="animate__animated animate__fadeInDown">Descubre el sabor Méxicano</h1>
+          <div class="hero_svg" aria-hidden="true">
+            <include src="./assets/img/chili.svg"></include>
+          </div>
           <p>
             Bienvenido al rinconcito de los secretos gastronómicos del país del Tequila. Descubrirás los aromas y la
             frescura con sabores tropicales.
@@ -23,7 +27,22 @@
           <h1 class="reveal_left">Nuestros mejores platos</h1>
           <div class="roller_slides">
             <div class="roller_card active">
-              <img class="roller_card_img" src="./assets/img/plato_tacos.png" alt="Plato de tacos" />
+              <div class="plate_with_fork">
+                <div class="fork_clip fork_clip_left" aria-hidden="true"></div>
+                <img
+                  class="roller_card_img"
+                  srcset="
+                    ./assets/img/plato_tacos_320.webp 320w,
+                    ./assets/img/plato_tacos_640.webp 640w,
+                    ./assets/img/plato_tacos_960.webp 960w
+                  "
+                  sizes="(max-width:767px) 75vw, (max-width:1023px) 65vw, 30vw"
+                  src="./assets/img/plato_tacos_640.webp"
+                  alt="Plato de tacos"
+                  loading="lazy"
+                />
+                <div class="fork_clip fork_clip_right" aria-hidden="true"></div>
+              </div>
               <div class="roller_card_content">
                 <h2>Tacos locos</h2>
                 <p>Explora nuestra selección de tacos y deja que tu paladar disfrute la experiencia.</p>
@@ -32,7 +51,23 @@
             </div>
 
             <div class="roller_card">
-              <img class="roller_card_img" src="./assets/img/plato_fajita.png" alt="Plato de fajitas" />
+              <div class="plate_with_fork">
+                <div class="fork_clip fork_clip_left" aria-hidden="true"></div>
+                <img
+                  class="roller_card_img"
+                  srcset="
+                    ./assets/img/plato_fajita_320.webp 320w,
+                    ./assets/img/plato_fajita_640.webp 640w,
+                    ./assets/img/plato_fajita_960.webp 960w
+                  "
+                  sizes="(max-width:767px) 75vw, (max-width:1023px) 65vw, 30vw"
+                  src="./assets/img/plato_fajita_640.webp"
+                  alt="Plato de fajitas"
+                  loading="lazy"
+                />
+                <div class="fork_clip fork_clip_right" aria-hidden="true"></div>
+              </div>
+
               <div class="roller_card_content">
                 <h2>Fajitas picantes</h2>
                 <p>Para los amantes del riesgo, tenemos una selección de las mejores fajitas ardientes y sabrosonas</p>
