@@ -24,10 +24,10 @@
 | enchilada.png | enchilada_480.webp | PNG | WEBP | 163.89 KB | 42.52 KB | 74.06% |
 | enchilada.png | enchilada_640.webp | PNG | WEBP | 163.89 KB | 70.54 KB | 56.96% |
 | enchilada.png | enchilada_960.webp | PNG | WEBP | 163.89 KB | 89.24 KB | 45.55% |
-| tacos.png | det1_header_mobile.webp | PNG | WEBP | 198.92 KB | 28.8 KB | 85.52% |
-| tacos.png | det1_header_desktop.webp | PNG | WEBP | 198.92 KB | 38.13 KB | 80.83% |
-| fajita_carrousel_3.png | det2_header_mobile.webp | PNG | WEBP | 158.39 KB | 10.97 KB | 93.07% |
-| fajita_carrousel_3.png | det2_header_desktop.webp | PNG | WEBP | 158.39 KB | 16.71 KB | 89.45% |
+| tacos.png | det1_header_mobile.webp | PNG | WEBP | 198.92 KB | 12.09 KB | 93.92% |
+| tacos.png | det1_header_desktop.webp | PNG | WEBP | 198.92 KB | 24 KB | 87.93% |
+| fajita_carrousel_3.png | det2_header_mobile.webp | PNG | WEBP | 158.39 KB | 7.02 KB | 95.57% |
+| fajita_carrousel_3.png | det2_header_desktop.webp | PNG | WEBP | 158.39 KB | 14.16 KB | 91.06% |
 | taco_carrousel_1.png | taco_carrousel_1_1x.webp | PNG | WEBP | 187.96 KB | 16.87 KB | 91.02% |
 | taco_carrousel_1.png | taco_carrousel_1_2x.webp | PNG | WEBP | 187.96 KB | 25.18 KB | 86.6% |
 | taco_carrousel_2.png | taco_carrousel_2_1x.webp | PNG | WEBP | 144.42 KB | 13.15 KB | 90.89% |
