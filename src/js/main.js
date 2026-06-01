@@ -25,25 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'animate__fadeInDown',
         'animate__zoomIn',
       );
-
-      void node.offsetWidth;
     });
+    requestAnimationFrame(() => {
+      if (image) {
+        image.classList.add('animate__animated', 'animate__zoomIn');
+      }
 
-    if (image) {
-      image.classList.add('animate__animated', 'animate__zoomIn');
-    }
+      if (title) {
+        title.classList.add('animate__animated', 'animate__fadeInDown');
+      }
 
-    if (title) {
-      title.classList.add('animate__animated', 'animate__fadeInDown');
-    }
+      if (text) {
+        text.classList.add('animate__animated', 'animate__fadeInUp');
+      }
 
-    if (text) {
-      text.classList.add('animate__animated', 'animate__fadeInUp');
-    }
-
-    if (button) {
-      button.classList.add('animate__animated', 'animate__fadeIn');
-    }
+      if (button) {
+        button.classList.add('animate__animated', 'animate__fadeIn');
+      }
+    });
   }
 
   function showSlide(index) {
@@ -99,17 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentTitle.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__fadeInRight');
 
-        void currentTitle.offsetWidth;
+        requestAnimationFrame(() => {
+          if (currentTitle.classList.contains('reveal_left')) {
+            currentTitle.classList.add('animate__animated', 'animate__fadeInLeft');
+          }
 
-        if (currentTitle.classList.contains('reveal_left')) {
-          currentTitle.classList.add('animate__animated', 'animate__fadeInLeft');
-        }
+          if (currentTitle.classList.contains('reveal_right')) {
+            currentTitle.classList.add('animate__animated', 'animate__fadeInRight');
+          }
 
-        if (currentTitle.classList.contains('reveal_right')) {
-          currentTitle.classList.add('animate__animated', 'animate__fadeInRight');
-        }
-
-        currentTitle.style.opacity = '1';
+          currentTitle.style.opacity = '1';
+        });
         titleObserver.unobserve(currentTitle);
       });
     },
