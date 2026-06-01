@@ -80,6 +80,7 @@ const imageConversion = [
         width: 480,
         height: 620,
         fit: 'cover',
+        quality: 65,
       },
       {
         name: 'det1_header_desktop.webp',
@@ -87,6 +88,7 @@ const imageConversion = [
         width: 1600,
         height: 700,
         fit: 'cover',
+        quality: 70,
       },
     ],
   },
@@ -99,6 +101,7 @@ const imageConversion = [
         width: 480,
         height: 620,
         fit: 'cover',
+        quality: 65,
       },
       {
         name: 'det2_header_desktop.webp',
@@ -106,6 +109,7 @@ const imageConversion = [
         width: 1600,
         height: 700,
         fit: 'cover',
+        quality: 70,
       },
     ],
   },
@@ -114,8 +118,18 @@ const imageConversion = [
   ...[1, 2, 3, 4].map((num) => ({
     input: `taco_carrousel_${num}.png`,
     outputs: [
-      { name: `taco_carrousel_${num}_1x.webp`, format: 'webp', width: 600 },
-      { name: `taco_carrousel_${num}_2x.webp`, format: 'webp', width: 1200 },
+      {
+        name: `taco_carrousel_${num}_1x.webp`,
+        format: 'webp',
+        width: 600,
+        quality: 65,
+      },
+      {
+        name: `taco_carrousel_${num}_2x.webp`,
+        format: 'webp',
+        width: 1200,
+        quality: 60,
+      },
     ],
   })),
 
@@ -123,8 +137,18 @@ const imageConversion = [
   ...[1, 2, 3, 4].map((num) => ({
     input: `fajita_carrousel_${num}.png`,
     outputs: [
-      { name: `fajita_carrousel_${num}_1x.webp`, format: 'webp', width: 600 },
-      { name: `fajita_carrousel_${num}_2x.webp`, format: 'webp', width: 1200 },
+      {
+        name: `fajita_carrousel_${num}_1x.webp`,
+        format: 'webp',
+        width: 600,
+        quality: 65,
+      },
+      {
+        name: `fajita_carrousel_${num}_2x.webp`,
+        format: 'webp',
+        width: 1200,
+        quality: 60,
+      },
     ],
   })),
 ];
@@ -150,7 +174,7 @@ async function imageOptimization(inputPath, outputPath, config) {
 
   if (config.format === 'webp') {
     image = image.webp({
-      quality: 80,
+      quality: config.quality || 70,
       effort: 6,
     });
   }
