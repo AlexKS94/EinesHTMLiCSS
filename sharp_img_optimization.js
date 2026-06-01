@@ -37,6 +37,7 @@ const imageConversion = [
     input: 'plato_tacos.png',
     outputs: [
       { name: 'plato_tacos_320.webp', format: 'webp', width: 320 },
+      { name: 'plato_tacos_480.webp', format: 'webp', width: 480 },
       { name: 'plato_tacos_640.webp', format: 'webp', width: 640 },
       { name: 'plato_tacos_960.webp', format: 'webp', width: 960 },
     ],
@@ -45,6 +46,7 @@ const imageConversion = [
     input: 'plato_fajita.png',
     outputs: [
       { name: 'plato_fajita_320.webp', format: 'webp', width: 320 },
+      { name: 'plato_fajita_480.webp', format: 'webp', width: 480 },
       { name: 'plato_fajita_640.webp', format: 'webp', width: 640 },
       { name: 'plato_fajita_960.webp', format: 'webp', width: 960 },
     ],
@@ -53,6 +55,7 @@ const imageConversion = [
     input: 'aguachile.png',
     outputs: [
       { name: 'aguachile_320.webp', format: 'webp', width: 320 },
+      { name: 'aguachile_480.webp', format: 'webp', width: 480 },
       { name: 'aguachile_640.webp', format: 'webp', width: 640 },
       { name: 'aguachile_960.webp', format: 'webp', width: 960 },
     ],
@@ -61,6 +64,7 @@ const imageConversion = [
     input: 'enchilada.png',
     outputs: [
       { name: 'enchilada_320.webp', format: 'webp', width: 320 },
+      { name: 'enchilada_480.webp', format: 'webp', width: 480 },
       { name: 'enchilada_640.webp', format: 'webp', width: 640 },
       { name: 'enchilada_960.webp', format: 'webp', width: 960 },
     ],
