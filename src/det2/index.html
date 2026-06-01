@@ -16,6 +16,29 @@
         this.rel = 'stylesheet';
       "
     />
+    <link rel="preload" as="image" href="../assets/img/bg_1_768.webp" media="(max-width: 767px)" fetchpriority="high" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/img/bg_1_1200.webp"
+      media="(min-width: 768px) and (max-width: 1023px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/img/bg_1_1600.webp"
+      media="(min-width: 1024px)"
+      fetchpriority="high"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Merienda:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <include src="partials/header.html"></include>
@@ -30,6 +53,9 @@
               src="../assets/img/det2_header_desktop.webp"
               alt="Imagen principal de la cultura mexicana"
               class="detail_img"
+              width="800"
+              height="440"
+              fetchpriority="high"
             />
           </picture>
 
@@ -53,6 +79,8 @@
                   src="../assets/img/fajita_carrousel_1_1x.webp"
                   alt="Taco loco 1"
                   class="carousel_img active"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
                 <img
@@ -60,6 +88,8 @@
                   src="../assets/img/fajita_carrousel_2_1x.webp"
                   alt="Taco loco 2"
                   class="carousel_img"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
                 <img
@@ -67,6 +97,8 @@
                   src="../assets/img/fajita_carrousel_3_1x.webp"
                   alt="Taco loco 3"
                   class="carousel_img"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
                 <img
@@ -74,6 +106,8 @@
                   src="../assets/img/fajita_carrousel_4_1x.webp"
                   alt="Taco loco 4"
                   class="carousel_img"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
               </div>
